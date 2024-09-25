@@ -1,0 +1,42 @@
+var _a;
+(_a = document.getElementById('resume-form')) === null || _a === void 0 ? void 0 : _a.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var nameInput = document.getElementById('name');
+    var emailInput = document.getElementById('email');
+    var phoneInput = document.getElementById('phone');
+    var remarksInput = document.getElementById('remarks');
+    var degreeInput = document.getElementById('degree');
+    var institutionInput = document.getElementById('institution');
+    var educationDurationInput = document.getElementById('education-duration');
+    var additionalQualificationsInput = document.getElementById('additional-qualifications');
+    var companyInput = document.getElementById('company');
+    var positionInput = document.getElementById('position');
+    var workDurationInput = document.getElementById('work-duration');
+    var workAdditionInput = document.getElementById('work-addition');
+    if (nameInput && emailInput && phoneInput && remarksInput && degreeInput && institutionInput && educationDurationInput && additionalQualificationsInput && companyInput && positionInput && workDurationInput && workAdditionInput) {
+        var name_1 = nameInput.value;
+        var email = emailInput.value;
+        var phone = phoneInput.value;
+        var remarks = remarksInput.value;
+        var degree = degreeInput.value;
+        var institution = institutionInput.value;
+        var educationDuration = educationDurationInput.value;
+        var additionalQualifications = additionalQualificationsInput.value;
+        var company = companyInput.value;
+        var position = positionInput.value;
+        var workDuration = workDurationInput.value;
+        var workAddition = workAdditionInput.value;
+        document.getElementById('display-name').innerText = name_1;
+        document.getElementById('display-email').innerText = email;
+        document.getElementById('display-phone').innerText = phone;
+        document.getElementById('display-remarks').innerText = remarks;
+        document.getElementById('display-degree').innerText = degree;
+        document.getElementById('display-institution').innerText = institution;
+        document.getElementById('display-education-duration').innerText = educationDuration;
+        document.getElementById('display-additional-qualifications').innerText = additionalQualifications;
+        document.getElementById('display-company').innerText = company;
+        document.getElementById('display-position').innerText = position;
+        document.getElementById('display-work-duration').innerText = workDuration;
+        document.getElementById('display-work-addition').innerText = workAddition;
+    }
+});
